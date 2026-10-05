@@ -1,0 +1,73 @@
+import { AddressType, UserType } from "@/types";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import Cookies from "js-cookie";
+
+interface AuthState {
+  user: UserType | null;
+  token: string | null;
+  isAuthenticated: boolean;
+  addresses: AddressType[];
+}
+
+const initialState: AuthState = {
+  user: null,
+  token: null,
+  isAuthenticated: false,
+  addresses: [],
+};
+
+const authSlice = createSlice({
+  name: "auth",
+  initialState,
+  reducers: {
+    login: (
+      state,
+      action: PayloadAction<{
+        user: UserType;
+        token: string;
+      }>,
+    ) => {
+      Cookies.set("auth_token", action.payload.token);
+
+      state.user = action.payload.user;
+      state.token = action.payload.token;
+      state.isAuthenticated = true;
+    },
+    updateProfile: (state, action: PayloadAction<{name: string; phone: string;}>) => {
+       if (!state.user) return;
+      state.user = {...state.user, ...action.payload};
+    },
+    logout: (state) => {
+      state.user = null;
+      state.token = null;
+      state.addresses = [];
+      state.isAuthenticated = false;
+      Cookies.remove("auth_token");
+    },
+    addAddress: (state, action: PayloadAction<AddressType>) => {
+      const index = state.addresses.findIndex(
+        (address) => address.id === action.payload.id,
+      );
+
+      if (index === -1) {
+        state.addresses.push(action.payload);
+      } else {
+        state.addresses[index] = action.payload;
+      }
+    },
+    addPhoneNumber: (state, action: PayloadAction<string>) => {
+      if (!state.user) return;
+      state.user.phone = action.payload;
+    },
+    filterAddress: (state, action: PayloadAction<number>) => {
+      state.addresses = state.addresses.filter(
+        (address) => address.id !== action.payload,
+      );
+    },
+  },
+});
+
+export const { login, addAddress, updateProfile, filterAddress, logout, addPhoneNumber } =
+  authSlice.actions;
+
+export default authSlice.reducer;

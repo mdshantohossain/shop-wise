@@ -1,0 +1,18 @@
+import { API_URL } from "@/config/env";
+import { AddressType, SocialLoginResponse, UserType } from "@/types";
+import { useMutation } from "@tanstack/react-query";
+import axios, { AxiosError } from "axios";
+
+export const useSocialLoginMutation = () => {
+  return useMutation<
+    SocialLoginResponse,
+    AxiosError,
+    { provider: string; token: string }
+  >({
+    mutationKey: ["social-login"],
+    mutationFn: async (values) => {
+      const { data } = await axios.post(API_URL + "/auth/social-login", values);
+      return data;
+    },
+  });
+};

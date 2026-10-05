@@ -1,0 +1,10 @@
+import axios from 'axios';
+
+
+export const apiClient = axios.create({
+  baseURL: "http://192.168.0.106:8000/api",
+  headers: {
+    Accept: "application/json",
+    "Content-Type": "application/json",
+  },
+});

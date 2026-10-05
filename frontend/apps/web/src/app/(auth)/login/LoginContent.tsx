@@ -1,0 +1,179 @@
+"use client";
+
+import ErrorMessage from "@/components/ErrorMessage";
+import SocialAuthentication from "@/components/SocialAuthentication";
+import { Button } from "@/components/ui/button";
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { loginUserMutation } from "@/services/api/auth.api";
+import { LoginValuesType } from "@/types";
+import { loginValidationSchema } from "@/utils/validationSchema";
+import { Checkbox } from "@radix-ui/react-checkbox";
+import { AxiosError } from "axios";
+import { Formik } from "formik";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React, { useState } from "react";
+import { useAuth } from "@/hooks/useAuth";
+import { useAuthModalContext } from "@/hooks/useAuthModalContext";
+
+export default function LoginContent() {
+  const [credentialError, setCredentialError] = useState<string | undefined>(
+    undefined,
+  );
+
+  // hooks
+  const { mutateAsync, isPending } = loginUserMutation();
+  const router = useRouter();
+  const { authLogin } = useAuth();
+
+  const { isFromModal, setWhichModal, resetContextState } =
+    useAuthModalContext();
+
+  const handleSignUp = () => {
+    if (isFromModal) {
+      setWhichModal("register");
+    } else {
+      router.push("/register");
+    }
+  };
+
+  const handleSubmit = (
+    values: LoginValuesType,
+    { resetForm }: { resetForm: () => void },
+  ) => {
+    mutateAsync(values, {
+      onSuccess: (res) => {
+        setCredentialError(undefined);
+        if (res.success) {
+          authLogin(res.data.user, res.data.token);
+
+          resetForm();
+
+          if (isFromModal) {
+            resetContextState();
+          } else {
+            console.log("redirect back");
+            return router.back();
+          }
+        }
+      },
+      onError: (error) => {
+        const axiosError = error as AxiosError<{
+          message?: string | undefined;
+        }>;
+
+        const status = axiosError.response?.status;
+
+        status === 422 || status === 400 || status === 401 || status === 403
+          ? setCredentialError(axiosError.response?.data.message)
+          : setCredentialError("Login failed. Please try again.");
+      },
+    });
+  };
+
+  return (
+    <>
+      <CardHeader>
+        <CardTitle className="text-2xl font-bold text-foreground">
+          Login
+        </CardTitle>
+      </CardHeader>
+      {isFromModal && <div className="w-full py-3"></div>}
+      <CardContent className="space-y-4">
+        {credentialError && (
+          <div className="bg-red-200 rounded-md py-2 px-4 w-full">
+            <p className="text-red-600">{credentialError}</p>
+          </div>
+        )}
+
+        <Formik
+          initialValues={{ email: "", password: "" } as LoginValuesType}
+          validationSchema={loginValidationSchema}
+          onSubmit={handleSubmit}>
+          {({
+            values,
+            errors,
+            touched,
+            handleChange,
+            handleBlur,
+            handleSubmit,
+          }) => (
+            <form onSubmit={handleSubmit}>
+              <div className="space-y-4">
+                <div>
+                  <Input
+                    type="email"
+                    placeholder="Your Email"
+                    className="w-full"
+                    onChange={handleChange("email")}
+                    onBlur={handleBlur("email")}
+                    value={values.email}
+                  />
+                  {touched.email && errors.email && (
+                    <ErrorMessage message={errors.email} />
+                  )}
+                </div>
+
+                <div>
+                  <Input
+                    type="password"
+                    placeholder="Password"
+                    className="w-full"
+                    onChange={handleChange("password")}
+                    onBlur={handleBlur("password")}
+                    value={values.password}
+                  />
+                  {touched.password && errors.password && (
+                    <ErrorMessage message={errors.password} />
+                  )}
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between my-3">
+                <div className="flex items-center space-x-2">
+                  <Checkbox id="remember" />
+                  <label htmlFor="remember" className="text-sm text-gray-600">
+                    Remember me
+                  </label>
+                </div>
+                <Link
+                  href="/forgot-password"
+                  className="text-sm text-gray-600 hover:text-gray-900 hover:underline">
+                  Forgot password?
+                </Link>
+              </div>
+
+              <Button
+                type="submit"
+                disabled={isPending}
+                className="w-full bg-red-500 hover:bg-red-600 text-white hover:cursor-grab">
+                {isPending ? "Logging in..." : "Login"}
+              </Button>
+            </form>
+          )}
+        </Formik>
+
+        <div className="relative">
+          <div className="absolute inset-0 flex items-center">
+            <span className="w-full border-t" />
+          </div>
+          <div className="relative flex justify-center text-xs uppercase">
+            <span className="bg-card px-2">OR</span>
+          </div>
+        </div>
+
+        <SocialAuthentication />
+
+        <div className="text-center text-sm text-gray-600">
+          {"Don't Have an Account? "}
+          <span
+            onClick={handleSignUp}
+            className="text-blue-600 hover:text-blue-800 cursor-pointer hover:underline">
+            Sign up
+          </span>
+        </div>
+      </CardContent>
+    </>
+  );
+}
