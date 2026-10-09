@@ -1,0 +1,106 @@
+services:
+  # Admin service
+  admin-service:
+    image: shopwise/admin-service:v1
+    build:
+      context: ./admin-service
+      target: development
+    restart: unless-stopped
+    volumes:
+      - ./admin-service:/var/www
+    networks:
+      - shopwise_network
+
+  # Api gateway
+  api-gateway:
+    image: shopwise/api-gateway:v1
+    build:
+      context: ./api-gateway
+      target: development
+    restart: unless-stopped
+    volumes:
+      - ./api-gateway:/var/www
+    networks:
+      - shopwise_network
+
+  # Catalog service
+  catalog-service:
+    image: shopwise/catalog-service:v1
+    build:
+      context: ./catalog-service
+      target: development
+    restart: unless-stopped
+    volumes:
+      - ./catalog-service:/var/www
+    networks:
+      - shopwise_network
+
+  # Notification service
+  notification-service:
+    image: shopwise/notification-service:v1
+    build:
+      context: ./notification-service
+      target: development
+    restart: unless-stopped
+    volumes:
+      - ./notification-service:/var/www
+    networks:
+      - shopwise_network
+
+  # Order service
+  order-service:
+    image: shopwise/order-service:v1
+    build:
+      context: ./order-service
+      target: development
+    restart: unless-stopped
+    volumes:
+      - ./order-service:/var/www
+    networks:
+      - shopwise_network
+
+  # Payment service
+  payment-service:
+    image: shopwise/payment-service:v1
+    build:
+      context: ./payment-service
+      target: development
+    restart: unless-stopped
+    volumes:
+      - ./payment-service:/var/www
+    networks:
+      - shopwise_network
+
+  # MySQL
+  mysql:
+    image: mysql:8.4
+    environment:
+        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+        MYSQL_USER: ${MYSQL_USER}
+        MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    restart: unless-stopped
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - mysql_data:/var/lib/mysql
+    networks:
+      - shopwise_network
+
+  # Nginx
+  nginx:
+    image: nginx
+    build: ./nginx
+    ports:
+      - "8000:80"
+    volumes:
+      - ./api-gateway:/var/www
+    networks:
+      - shopwise_network
+    depends_on:
+      - api-gateway
+
+networks:
+  shopwise_network:
+    driver: bridge
+
+volumes:
+  mysql_data:

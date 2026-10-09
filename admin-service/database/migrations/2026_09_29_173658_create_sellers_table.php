@@ -23,7 +23,6 @@ return new class extends Migration
             ]);
             $table->string('store_name');
             $table->text('description');
-            $table->text('description');
             $table->string('phone');
             $table->text('address');
             $table->string('state');

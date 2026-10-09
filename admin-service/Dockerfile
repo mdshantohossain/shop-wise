@@ -1,37 +1,112 @@
-# Use official PHP image with required extensions
-FROM php:8.2-fpm
+# =========================================================
+# 1. Base: PHP + extensions + system dependencies
+# =========================================================
+FROM php:8.4-fpm AS base
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    git \
+# Install system dependencies and PHP extensions for Laravel with MySQL/PostgreSQL support.
+RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
-    libpng-dev \
-    libonig-dev \
-    libxml2-dev \
-    zip \
+    bash \
     unzip \
+    libpq-dev \
+    libonig-dev \
+    libssl-dev \
+    libxml2-dev \
+    libcurl4-openssl-dev \
+    libicu-dev \
     libzip-dev \
-    npm \
-    nodejs
+    libfcgi-bin \
+     procps \
+    && docker-php-ext-install -j$(nproc) \
+    pdo_mysql \
+    pdo_pgsql \
+    pgsql \
+    intl \
+    zip \
+    && pecl install redis \
+    && docker-php-ext-enable redis \
+    && apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Install PHP extensions
-RUN docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd zip
+# =========================================================
+# 2. Builder: Production Composer dependencies
+# =========================================================
+FROM base AS builder
 
-# Install Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-
-# Set working directory
 WORKDIR /var/www
 
-# Copy app files
+# Install Composer and dependencies
+COPY --from=composer:2.10 /usr/bin/composer /usr/bin/composer
+
+# Copy dependency manifests first for better caching
+COPY composer.json composer.lock ./
+
+RUN composer install \
+    --no-dev \
+    --optimize-autoloader \
+    --no-interaction \
+    --no-progress \
+    --prefer-dist \
+    --no-scripts
+
 COPY . .
 
-# Install Laravel dependencies
-RUN composer install
+# Generate optimized autoloader after copying source
+RUN composer dump-autoload \
+    --no-dev \
+    --optimize \
+    --no-interaction \
+    --no-scripts
 
-# Set file permissions
-RUN chown -R www-data:www-data /var/www && chmod -R 755 /var/www/storage
+# Laravel writable directories
+RUN chown -R www-data:www-data \
+    /var/www/storage \
+    /var/www/bootstrap/cache
 
-# Expose port 9000 and start PHP-FPM
+# =========================================================
+# 3. Development
+# =========================================================
+FROM builder AS development
+
+# Add dev dependencies; builder already has production dependencies
+RUN composer install \
+    --optimize-autoloader \
+    --no-interaction \
+    --no-progress \
+    --prefer-dist \
+    --no-scripts
+
+COPY ./docker/php/development.ini \
+    /usr/local/etc/php/conf.d/99-development.ini
+
+USER www-data
+
+EXPOSE 9000
+
+CMD ["php-fpm"]
+
+# =========================================================
+# 4. Preview
+# =========================================================
+FROM builder as preview
+
+COPY ./docker/php/production.ini \
+     /usr/local/etc/php/conf.d/99-production.ini
+
+EXPOSE 9000
+CMD ["php-fpm"]
+
+# =========================================================
+# 5. Production
+# =========================================================
+FROM builder as production
+
+COPY ./docker/php/production.ini \
+     /usr/local/etc/php/conf.d/99-production.ini
+
+# Download and install php-fpm health check script
+RUN curl -o /usr/local/bin/php-fpm-healthcheck \
+    https://raw.githubusercontent.com/renatomefi/php-fpm-healthcheck/master/php-fpm-healthcheck \
+    && chmod +x /usr/local/bin/php-fpm-healthcheck
+
 EXPOSE 9000
 CMD ["php-fpm"]

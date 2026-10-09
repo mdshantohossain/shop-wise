@@ -1,11 +1,12 @@
-# Stage 1: Build environment and Composer dependencies
-FROM php:8.4-fpm AS builder
+# =========================================================
+# 1. Base: PHP + extensions + system dependencies
+# =========================================================
+FROM php:8.4-fpm AS base
 
 # Install system dependencies and PHP extensions for Laravel with MySQL/PostgreSQL support.
-# Dependencies in this stage are only required for building the final image.
-# Node.js and asset building are handled in the Nginx stage, not here.
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
+    bash \
     unzip \
     libpq-dev \
     libonig-dev \
@@ -14,6 +15,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libcurl4-openssl-dev \
     libicu-dev \
     libzip-dev \
+    libfcgi-bin \
+     procps \
     && docker-php-ext-install -j$(nproc) \
     pdo_mysql \
     pdo_pgsql \
@@ -24,74 +27,86 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && docker-php-ext-enable redis \
     && apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Set the working directory inside the container
+# =========================================================
+# 2. Builder: Production Composer dependencies
+# =========================================================
+FROM base AS builder
+
 WORKDIR /var/www
 
-COPY . /var/www
-
 # Install Composer and dependencies
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-    && composer install --no-dev --optimize-autoloader --no-interaction --no-progress --prefer-dist
+COPY --from=composer:2.10 /usr/bin/composer /usr/bin/composer
 
-# Stage 2: Production environment
-FROM php:8.5-fpm AS production
+# Copy dependency manifests first for better caching
+COPY composer.json composer.lock ./
 
-# Install only runtime libraries needed in production
-# libfcgi-bin and procps are required for the php-fpm-healthcheck script
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    libpq-dev \
-    libicu-dev \
-    libzip-dev \
-    libfcgi-bin \
-    procps \
-    && apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN composer install \
+    --no-dev \
+    --optimize-autoloader \
+    --no-interaction \
+    --no-progress \
+    --prefer-dist \
+    --no-scripts
+
+COPY . .
+
+# Generate optimized autoloader after copying source
+RUN composer dump-autoload \
+    --no-dev \
+    --optimize \
+    --no-interaction \
+    --no-scripts
+
+# Laravel writable directories
+RUN chown -R www-data:www-data \
+    /var/www/storage \
+    /var/www/bootstrap/cache
+
+# =========================================================
+# 3. Development
+# =========================================================
+FROM builder AS development
+
+# Add dev dependencies; builder already has production dependencies
+RUN composer install \
+    --optimize-autoloader \
+    --no-interaction \
+    --no-progress \
+    --prefer-dist \
+    --no-scripts
+
+COPY ./docker/php/development.ini \
+    /usr/local/etc/php/conf.d/99-development.ini
+
+USER www-data
+
+EXPOSE 9000
+
+CMD ["php-fpm"]
+
+# =========================================================
+# 4. Preview
+# =========================================================
+FROM builder as preview
+
+COPY ./docker/php/production.ini \
+     /usr/local/etc/php/conf.d/99-production.ini
+
+EXPOSE 9000
+CMD ["php-fpm"]
+
+# =========================================================
+# 5. Production
+# =========================================================
+FROM builder as production
+
+COPY ./docker/php/production.ini \
+     /usr/local/etc/php/conf.d/99-production.ini
 
 # Download and install php-fpm health check script
 RUN curl -o /usr/local/bin/php-fpm-healthcheck \
     https://raw.githubusercontent.com/renatomefi/php-fpm-healthcheck/master/php-fpm-healthcheck \
     && chmod +x /usr/local/bin/php-fpm-healthcheck
 
-# Copy the initialization script
-COPY ./docker/php-fpm/entrypoint.sh /usr/local/bin/entrypoint.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh
-
-# Copy the initial storage structure
-COPY ./storage /var/www/storage-init
-
-# Copy PHP extensions and libraries from the builder stage
-COPY --from=builder /usr/local/lib/php/extensions/ /usr/local/lib/php/extensions/
-COPY --from=builder /usr/local/etc/php/conf.d/ /usr/local/etc/php/conf.d/
-COPY --from=builder /usr/local/bin/docker-php-ext-* /usr/local/bin/
-
-# Use the recommended production PHP configuration
-# -----------------------------------------------------------
-# PHP provides development and production configurations.
-# Here, we replace the default php.ini with the production
-# version to apply settings optimized for performance and
-# security in a live environment.
-# -----------------------------------------------------------
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-
-# Keep the image-provided FPM global config intact and add pool overrides separately
-COPY ./docker/common/php-fpm/conf.d/*.conf /usr/local/etc/php-fpm.d/
-# Update the variables_order to include E (for ENV)
-#RUN sed -i 's/variables_order = "GPCS"/variables_order = "EGPCS"/' "$PHP_INI_DIR/php.ini"
-
-# Copy the application code and dependencies from the build stage
-COPY --from=builder /var/www /var/www
-
-# Set working directory
-WORKDIR /var/www
-
-# Ensure correct permissions
-RUN chown -R www-data:www-data /var/www
-
-# Switch to the non-privileged user to run the application
-USER www-data
-
-# Change the default command to run the entrypoint script
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-
-# Expose port 9000 and start php-fpm server
 EXPOSE 9000
 CMD ["php-fpm"]
