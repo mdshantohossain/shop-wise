@@ -5,46 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e57507f-0c67-43a3-bb90-7a93cf21a209" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-service/docker/php/development.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-service/docker/php/production.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/docker/php/development.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog-service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog-service/docker/php/development.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog-service/docker/php/production.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prompt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/app/helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shop-wise.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/bootstrap/cache/packages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/bootstrap/cache/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/database/migrations/2026_09_29_173658_create_sellers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/database/migrations/2026_09_29_173658_create_sellers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/public/admin.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -799,7 +773,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/shant/OneDrive/Desktop/projects/shop-wise/payment-service",
+    "last_opened_file_path": "C:/Users/shant/OneDrive/Desktop/projects/shop-wise/auth-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -810,11 +784,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\auth-service" />
+      <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise" />
       <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\payment-service" />
       <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\order-service" />
       <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\notification-service" />
-      <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\catalog-service" />
-      <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\admin-service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\" />
@@ -865,7 +839,8 @@
       <workItem from="1791385172974" duration="4718000" />
       <workItem from="1791436690086" duration="6853000" />
       <workItem from="1791453016970" duration="19845000" />
-      <workItem from="1791519462706" duration="22901000" />
+      <workItem from="1791519462706" duration="26802000" />
+      <workItem from="1791596350899" duration="24149000" />
     </task>
     <servers />
   </component>

@@ -34,5 +34,22 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
-
+    'auth' => [
+        'url' => env('AUTH_SERVICE_URL', 'http://nginx:8081'),
+    ],
+    'catalog' => [
+        'url' => env('CATALOG_SERVICE_URL', 'http://nginx:8082'),
+    ],
+    'order' => [
+        'url' => env('ORDER_SERVICE_URL', 'http://nginx:8083'),
+    ],
+    'payment' => [
+        'url' => env('PAYMENT_SERVICE_URL', 'http://nginx:8084'),
+    ],
+    'admin' => [
+        'url' => env('ADMIN_SERVICE_URL', 'http://nginx:8085'),
+    ],
+    'notification' => [
+        'url' => env('NOTIFICATION_SERVICE_URL', 'http://nginx:8086'),
+    ],
 ];
