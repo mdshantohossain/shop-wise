@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e57507f-0c67-43a3-bb90-7a93cf21a209" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api-gateway/app/helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -754,6 +742,7 @@
       <path value="$PROJECT_DIR$/order-service/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/order-service/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-time" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -772,8 +761,8 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/shant/OneDrive/Desktop/projects/shop-wise/auth-service",
+    "git-widget-placeholder": "shanto",
+    "last_opened_file_path": "C:/Users/shant/OneDrive/Desktop/projects/shop-wise/mail-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -784,11 +773,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\mail-service" />
       <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\auth-service" />
       <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise" />
       <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\payment-service" />
       <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\order-service" />
-      <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\notification-service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\shant\OneDrive\Desktop\projects\shop-wise\" />
@@ -841,6 +830,7 @@
       <workItem from="1791453016970" duration="19845000" />
       <workItem from="1791519462706" duration="26802000" />
       <workItem from="1791596350899" duration="24149000" />
+      <workItem from="1793870241921" duration="157000" />
     </task>
     <servers />
   </component>

@@ -728,6 +728,7 @@
       <path value="$PROJECT_DIR$/order-service/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/order-service/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-time" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.3" />
