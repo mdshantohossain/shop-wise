@@ -1,0 +1,176 @@
+services:
+  # Api gateway
+  api-gateway:
+    image: shopwise/api-gateway:v1
+    build:
+      context: ./api-gateway
+      target: development
+    expose:
+      - "9000"
+    environment:
+      AUTH_SERVICE_URL: http://nginx:8081
+      ADMIN_SERVICE_URL: http://nginx:8085
+      CATALOG_SERVICE_URL: http://nginx:8082
+      ORDER_SERVICE_URL: http://nginx:8083
+      PAYMENT_SERVICE_URL: http://nginx:8084
+      NOTIFICATION_SERVICE_URL: http://nginx:8086
+    restart: unless-stopped
+    volumes:
+      - ./api-gateway:/var/www
+    networks:
+      - shopwise_network
+
+  # Auth service
+  auth-service:
+    image: shopwise/auth-service:v1
+    build:
+      context: ./auth-service
+      target: development
+    expose:
+      - "8080"
+    restart: unless-stopped
+    volumes:
+      - ./auth-service:/var/www
+    networks:
+      - shopwise_network
+
+  # Admin service
+#  admin-service:
+#    image: shopwise/admin-service:v1
+#    build:
+#      context: ./admin-service
+#      target: development
+#    expose:
+#      - "9000"
+#    restart: unless-stopped
+#    volumes:
+#      - ./admin-service:/var/www
+#    networks:
+#      - shopwise_network
+
+  # Catalog service
+  catalog-service:
+    image: shopwise/catalog-service:v1
+    build:
+      context: ./catalog-service
+      target: development
+    expose:
+      - "9000"
+    restart: unless-stopped
+    volumes:
+      - ./catalog-service:/var/www
+    networks:
+      - shopwise_network
+
+  # Notification service
+  notification-service:
+    image: shopwise/notification-service:v1
+    build:
+      context: ./notification-service
+      target: development
+    expose:
+      - "9000"
+    restart: unless-stopped
+    volumes:
+      - ./notification-service:/var/www
+    networks:
+      - shopwise_network
+
+  # Order service
+  order-service:
+    image: shopwise/order-service:v1
+    build:
+      context: ./order-service
+      target: development
+    expose:
+      - "9000"
+    restart: unless-stopped
+    volumes:
+      - ./order-service:/var/www
+    networks:
+      - shopwise_network
+
+  # Payment service
+  payment-service:
+    image: shopwise/payment-service:v1
+    build:
+      context: ./payment-service
+      target: development
+    expose:
+      - "9000"
+    restart: unless-stopped
+    volumes:
+      - ./payment-service:/var/www
+    networks:
+      - shopwise_network
+
+  # Payment service
+  mail-service:
+    image: shopwise/mail-service:v1
+    build:
+      context: ./mail-service
+      target: development
+    expose:
+      - "9000"
+    restart: unless-stopped
+    volumes:
+      - ./mail-service:/var/www
+    networks:
+      - shopwise_network
+
+  # MySQL
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    restart: unless-stopped
+    volumes:
+      - ./infrastructure/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - mysql_data:/var/lib/mysql
+    networks:
+      - shopwise_network
+
+  # Nginx
+  nginx:
+    image: nginx
+    build: ./infrastructure/nginx
+    ports:
+      - "8000:80"
+    volumes:
+      - ./api-gateway:/var/www/api-gateway:ro
+      - ./admin-service:/var/www/admin-service:ro
+      - ./auth-service:/var/www/auth-service:ro
+      - ./catalog-service:/var/www/catalog-service:ro
+      - ./order-service:/var/www/order-service:ro
+      - ./payment-service:/var/www/payment-service:ro
+      - ./notification-service:/var/www/notification-service:ro
+    networks:
+      - shopwise_network
+    depends_on:
+      - api-gateway
+    restart: unless-stopped
+
+  # RabbitMQ
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: rabbitmq
+    hostname: rabbitmq
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+networks:
+  shopwise_network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+  rabbitmq_data:

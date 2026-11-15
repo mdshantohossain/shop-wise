@@ -1,0 +1,1628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="762c2da7-8503-4237-9926-0e67a15c6d74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/CLAUDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/bootstrap/providers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/database/migrations/0001_01_01_000001_create_cache_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/database/migrations/0001_01_01_000002_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/app/private/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/framework/cache/locks/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics-service/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.bash_history" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/CLAUDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/app/helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/bootstrap/providers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/database/migrations/0001_01_01_000001_create_cache_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/database/migrations/0001_01_01_000002_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/database/migrations/2026_10_09_180905_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/docker/php/development.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/docker/php/production.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/storage/app/private/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/CLAUDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Events/SellerRegisteredEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Events/UserRegisteredEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Controllers/BranchController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Controllers/SellerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Controllers/SellerPaymentSettingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Controllers/SellerSettingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Controllers/SellerShippingSettingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Controllers/UserAddressController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Middleware/EnsureActiveSessionMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Middleware/EnsureTrustedWebOriginMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Requests/LoginRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Requests/SellerRegisterRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Requests/UserRegisterRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Http/Resources/UserResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Listeners/CreateSellerAccountListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Models/Branch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Models/Seller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Models/SellerPaymentSetting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Models/SellerSetting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Models/SellerShippingSetting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Models/UserAddress.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Models/UserSession.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Models/UserSessionToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Services/AuthService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Services/RabbitMQPublisher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/app/Supports/AuthCookie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/bootstrap/providers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/authentication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/cors.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/jwt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/0001_01_01_000001_create_cache_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/0001_01_01_000002_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/2026_10_10_062907_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/2026_10_10_063552_create_sellers_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/2026_10_11_144231_create_seller_settings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/2026_10_11_155740_create_user_addresses_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/2026_10_11_163909_create_branches_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/2026_10_11_175138_create_seller_shipping_settings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/2026_11_06_100239_create_user_sessions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/migrations/2026_11_06_100245_create_user_session_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/database/seeders/SuperAdminSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/app/private/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/framework/cache/locks/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/CLAUDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/BrandController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/InventoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/ProductPolicyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/ProductRejectionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/ProductWarrantyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/ReviewController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/SearchController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Controllers/SubCategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Request/CategoryRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Request/ProductCreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Http/Request/SubCategoryRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/Brand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/Inventory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/OtherImage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/ProductPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/ProductRejection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/ProductVariant.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/ProductWarranty.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/Review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/ReviewImage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/SubCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Services/CategoryService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Services/ProductPolicyService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Services/ProductService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Services/ReviewService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/app/Services/SubCategoryService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/bootstrap/providers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/0001_01_01_000001_create_cache_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/0001_01_01_000002_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2025_05_07_101542_create_sub_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2025_10_02_150759_create_product_policies_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2025_11_13_165736_create_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2025_11_13_170036_create_other_images_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2025_11_13_170314_create_product_variants_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2025_11_13_170451_create_reviews_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2025_12_05_054346_create_review_images_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2026_09_07_180358_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2026_10_12_132726_create_inventories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2026_10_12_182305_create_product_rejections_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/migrations/2026_10_12_182711_create_product_warranties_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/docker/php/development.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/docker/php/production.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/storage/app/private/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docs/architecture.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docs/networking.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/mysql/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/nginx/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/rabbitmq/rabbitmq.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/CLAUDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/app/Console/Commands/ConsumeUserRegistered.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/app/Services/MailServices.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/bootstrap/providers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/database/migrations/0001_01_01_000001_create_cache_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/database/migrations/0001_01_01_000002_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/resources/views/auth/verify-mail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/app/private/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/framework/cache/locks/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mail-service/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/CLAUDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/Notification/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/Payment/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/Payment/app/Providers/PaymentServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/Payment/database/migrations/2026_03_03_210537_create_transactions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/Payment/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/Payment/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/bootstrap/providers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/database/migrations/0001_01_01_000001_create_cache_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/database/migrations/0001_01_01_000002_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/storage/app/private/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/CLAUDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Order/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Order/app/Http/Controllers/OrderDetailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Order/app/Models/Order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Order/app/Models/OrderDetail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Order/app/Providers/OrderServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Order/database/migrations/2025_07_05_072947_create_orders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Order/database/migrations/2025_11_13_170626_create_order_details_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Order/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Order/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/bootstrap/providers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/database/migrations/0001_01_01_000001_create_cache_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/database/migrations/0001_01_01_000002_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/storage/app/private/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/CLAUDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/Payment/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/Payment/app/Providers/PaymentServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/Payment/database/migrations/2026_03_03_210537_create_transactions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/Payment/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/Payment/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/app/Http/Controllers/SellerBankAccountController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/app/Models/SellerBankAccount.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/bootstrap/providers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/database/migrations/0001_01_01_000001_create_cache_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/database/migrations/0001_01_01_000002_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/database/migrations/2026_10_12_113159_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/database/migrations/2026_10_12_113346_create_seller_bank_accounts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/storage/app/private/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/mail-service/composer.json" />
+      <option value="$PROJECT_DIR$/payment-service/composer.json" />
+      <option value="$PROJECT_DIR$/notification-service/composer.json" />
+      <option value="$PROJECT_DIR$/order-service/composer.json" />
+      <option value="$PROJECT_DIR$/auth-service/composer.json" />
+      <option value="$PROJECT_DIR$/catalog-service/composer.json" />
+      <option value="$PROJECT_DIR$/analytics-service/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/api-gateway/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$PROJECT_DIR$/../../../../../../xampp/php/php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/api-gateway/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-php82" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/composer" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-php86" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-time" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/pao" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/agent-detector" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/league/config" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/api-gateway/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/league/config" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-time" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/laravel/pao" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-php82" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/polyfill-php86" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/laravel/agent-detector" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/composer" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/mail-service/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-time" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-php82" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/laravel/pao" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-php86" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/laravel/agent-detector" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/league/config" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/composer" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/payment-service/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/laravel/pao" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/laravel/agent-detector" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-php82" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/league/config" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-time" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-php86" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/composer" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/notification-service/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/order-service/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/order-service/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/order-service/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/order-service/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/order-service/vendor/laravel/pao" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/order-service/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/order-service/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/order-service/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/order-service/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/order-service/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/order-service/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/order-service/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/order-service/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-time" />
+      <path value="$PROJECT_DIR$/order-service/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/order-service/vendor/laravel/agent-detector" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/order-service/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/order-service/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/order-service/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/order-service/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/order-service/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/order-service/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/order-service/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/order-service/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-php82" />
+      <path value="$PROJECT_DIR$/order-service/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/order-service/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/order-service/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/order-service/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/order-service/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/order-service/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/order-service/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/order-service/vendor/league/config" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/order-service/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/order-service/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/order-service/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/order-service/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/order-service/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/order-service/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/order-service/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/order-service/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/order-service/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/order-service/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/order-service/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/order-service/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/order-service/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-php86" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/order-service/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/order-service/vendor/composer" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/order-service/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/order-service/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/order-service/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/order-service/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/order-service/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/order-service/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/order-service/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/order-service/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/order-service/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/order-service/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/order-service/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/order-service/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/order-service/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/order-service/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/order-service/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/order-service/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/order-service/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/order-service/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/order-service/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/order-service/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/order-service/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/order-service/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-php82" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/laravel/agent-detector" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-php86" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/laravel/pao" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/polyfill-time" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/stella-maris/clock" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/league/config" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/composer" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/auth-service/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-time" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/laravel/pao" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/laravel/agent-detector" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-php82" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/league/config" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/composer" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-php86" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/catalog-service/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/laravel/agent-detector" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-time" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-php86" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-php82" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/league/config" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/composer" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/analytics-service/vendor/laravel/pao" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="3M7ZEHtcrWdYSZXwby55az5ESAt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "temp-branch",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/api-gateway/composer.json" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/api-gateway/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="analytics-service" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/analytics-service/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="auth-service" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/auth-service/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="catalog-service" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/catalog-service/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mail-service" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/mail-service/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="notification-service" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/notification-service/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="order-service" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/order-service/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="payment-service" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/payment-service/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PS-253.29346.151" />
+        <option value="bundled-php-predefined-a98d8de5180a-0e0d91225499-com.jetbrains.php.sharedIndexes-PS-253.29346.151" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="762c2da7-8503-4237-9926-0e67a15c6d74" name="Changes" comment="" />
+      <created>1794703452436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1794703452436</updated>
+      <workItem from="1794703453519" duration="306000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
